@@ -65,7 +65,7 @@ body {
     grid-area: card5; 
     background-color: hsl(0, 0%, 100%);
     border-radius: 8px;
-    padding: 10px;
+    padding: 20px 20px;
     color: hsl(0, 0%, 7%);
     align-content: end;
 }
@@ -139,9 +139,9 @@ h2, h3 {
     color: hsl(39, 100%, 71%);
 }
 
-.card1 > img, .card4 > img {
+.card1 > img {
     width: 100%;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .card2 > img {
@@ -156,6 +156,11 @@ h2, h3 {
     overflow: hidden;
     object-fit: cover;
     object-position: left top;
+}
+
+.card4 > img {
+    width: 100%;
+    margin-top: 10px;
 }
 
 .card5 > img {
