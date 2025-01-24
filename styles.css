@@ -204,6 +204,12 @@ h2, h3 {
 
 /* -------------------- LARGE SCREENS STYLES -------------------- */
 
+@media screen and (max-width: 1400px) {
+    body {
+        margin: 20px 150px;
+    }
+}
+
 @media screen and (max-width: 1199.98px) {
     body {
         margin: 20px;
