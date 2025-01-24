@@ -1,3 +1,5 @@
+/* -------------------- BODY STYLES -------------------- */
+
 @font-face {
     font-family: 'DM Sans';
     src: url('./assets/fonts/DMSans-VariableFont_opsz\,wght.ttf');
@@ -9,6 +11,46 @@ body {
     margin: 30px 300px;
     background-color: #F5F5F5;
 }
+
+.no-margin {
+    margin: 0;
+}
+
+/* -------------------- TEXT STYLES -------------------- */
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+    line-height: 1;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h2, h3 {
+    letter-spacing: -2px;
+}
+
+.highlight-purple {
+    font-style: italic;
+    font-weight: 500;
+    color: hsl(256, 67%, 59%);
+}
+
+.highlight-yellow {
+    font-weight: 500;
+    color: hsl(39, 100%, 71%);
+}
+
+/* -------------------- GRID CONTAINER -------------------- */
 
 .grid-container {
     display: grid;
@@ -27,6 +69,8 @@ body {
     grid-auto-rows: 1fr;
     gap: 25px;
 }
+
+/* -------------------- GRID ITEMS -------------------- */
 
 .card1 { 
     grid-area: card1; 
@@ -107,37 +151,7 @@ body {
     width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 500;
-    line-height: 1;
-}
-
-h1 {
-    font-size: 48px;
-}
-
-h2 {
-    font-size: 32px;
-}
-
-h3 {
-    font-size: 28px;
-}
-
-h2, h3 {
-    letter-spacing: -2px;
-}
-
-.highlight-purple {
-    font-style: italic;
-    font-weight: 500;
-    color: hsl(256, 67%, 59%);
-}
-
-.highlight-yellow {
-    font-weight: 500;
-    color: hsl(39, 100%, 71%);
-}
+/* -------------------- GRID IMAGES -------------------- */
 
 .card1 > img {
     width: 100%;
@@ -184,21 +198,19 @@ h2, h3 {
     margin-top: 15px;
 }
 
-.no-margin {
-    margin: 0;
-}
+/* -------------------- LARGE SCREENS STYLES -------------------- */
 
-/* LARGE SCREENS */
 @media screen and (max-width: 1199.98px) {
     body {
         margin: 20px;
     }
 }
 
-
-/* TABLET STYLES */
+/* -------------------- TABLES STYLES -------------------- */
 
 @media screen and (max-width: 991.98px) { 
+    /* GRID CONTAINER */
+
     .grid-container {
         grid-template-areas:
             'card1 card2'
@@ -208,6 +220,8 @@ h2, h3 {
         grid-template-columns: repeat(2, 1fr);
         grid-auto-rows: auto;
     }
+    
+    /* GRID ITEMS */
 
     .card1, .card2, .card3, .card4, .card5, .card7, .card8 {
         padding: 20px;
@@ -222,6 +236,8 @@ h2, h3 {
         align-content: center;
     }
 
+    /* GRID IMAGES */
+
     .card1 > img, .card2 > img, .card4 > img, .card6 > img, .card7 > img {
         width: 60%;
     }
@@ -235,6 +251,8 @@ h2, h3 {
         margin-top: 20px;
     }
 
+    /* OTHERS */
+
     .card4 > h2 {
         margin: 0;
     }
@@ -244,9 +262,11 @@ h2, h3 {
     }
 }
 
-/* MOBILE STYLES */
+/* -------------------- MOBILE STYLES -------------------- */
 
 @media screen and (max-width: 767.98px) { 
+    /* GRID CONTAINER */
+
     .grid-container {
         grid-template-areas:
             'card2'
@@ -260,6 +280,8 @@ h2, h3 {
         grid-template-columns: repeat(1, 1fr);
         grid-auto-rows: auto;
     }
+
+    /* GRID ITEMS */
 
     .card2 {
         padding: 40px;
@@ -287,6 +309,8 @@ h2, h3 {
         grid-template-columns: 1fr;
     }
 
+    /* GRID IMAGES */
+
     .card1 > img, .card2 > img, .card4 > img, .card7 > img  {
         width: 60%;
     }
@@ -310,6 +334,8 @@ h2, h3 {
     .card8-grid-img > img {
         width: 200px;
     }
+
+    /* OTHERS */
 
     .card4 > h2 {
         margin: 0;
